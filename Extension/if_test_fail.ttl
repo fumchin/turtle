@@ -1,0 +1,10 @@
+START
+    SET A ( 1 )
+
+    IF $A BETTER 1
+        COLOUR "RED"
+    END
+
+    FORWARD 5
+
+END

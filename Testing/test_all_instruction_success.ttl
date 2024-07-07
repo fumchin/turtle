@@ -1,0 +1,14 @@
+START
+    COLOUR "GREEN"
+    FORWARD 2
+    RIGHT 90
+    FORWARD 2
+    LOOP C OVER { "RED" "BLUE" "YELLOW" }
+        COLOUR $C
+        FORWARD 2
+    END
+    COLOUR "CYAN"
+    SET A ( 0 )
+    SET A ( $A 3 + )
+    FORWARD $A
+END

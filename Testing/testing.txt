@@ -1,0 +1,13 @@
+In the testing phase, I utilized both black-box and white-box testing methodologies to ensure the robustness of my code.
+
+For white-box testing, I created individual unit tests for each function, utilizing assertions to verify that each function produced the expected output. 
+I aimed to cover all possibilities within a function, trying to test every line of code.
+
+On the flip side, black-box testing treated the code as a sealed box, 
+focusing on the desired output without looking into the internal implementation details.
+ 
+To achieve this, I built two .ttl files, one includes all instructions outlined in the grammar, assessing if the program generated the anticipated graph. 
+The other containing syntax errors, the program will provide corresponding error messages.
+
+I also checked three different output formats - screen, txt, and ps/pdf files, and confirmed their correctness.
+

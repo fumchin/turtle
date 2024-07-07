@@ -1,0 +1,34 @@
+In the extension, I added "IF" function based on existing grammar.
+The grammar of IF works as follows,
+
+<IF> ::= "IF" <VARNUM> "EQUALS"|"LESS"|"GREATER" <VARNUM> <INSLST>
+
+based on the grammar, I can compare between two variables (or numbers),
+if the statement is true, the program will continue execute the code in the IF-END,
+However, if the statement is false, the program will skip until the END appeared, and then execute the remaining program.
+
+The IF statement I implemented support "EQUALS", "GREATER", and "LESS" comparison.
+To test the IF function, I wrote several simple tests to test the function.
+Here is the most simple one:
+```
+START
+  SET A ( 1 )
+  IF $A EQUALS 1
+    FORWARD 15
+  END
+END
+```
+The program will draw a line.
+
+Once I changed the code to:
+```
+START
+  SET A ( 1 )
+  IF $A EQUALS 3
+    FORWARD 15
+  END
+END
+```
+The program will not print out anything due to 1 is not equals to 3.
+
+At last, in the extension part, I also used both white_box and black_box testing to assure the correctness of my grammar.
