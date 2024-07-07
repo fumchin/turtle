@@ -6,7 +6,7 @@ pipeline {
     }
     tools {
         // 使用你在 Global Tool Configuration 中配置的 Docker 工具名稱
-        docker 'docker'
+        dockerTool 'docker'
     }
     stages {
         stage('Checkout') {
