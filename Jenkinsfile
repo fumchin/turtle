@@ -20,6 +20,7 @@ pipeline {
         stage('Build') {
             steps {
                 script {
+                    sudo usermod -a -G docker jenkins
                     // 動態構建 Docker 映像並命名
                     docker.build("${DOCKER_IMAGE}:latest")
                 }
