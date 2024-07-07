@@ -4,6 +4,10 @@ pipeline {
         // 設置 Docker 映像的名稱
         DOCKER_IMAGE = 'turtle'
     }
+    tools {
+        // 使用你在 Global Tool Configuration 中配置的 Docker 工具名稱
+        docker 'docker'
+    }
     stages {
         stage('Checkout') {
             steps {
